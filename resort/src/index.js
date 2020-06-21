@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
+import {BrowserRouter as Router} from 'react-router-dom'; // Used for Routing - refer React Training
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router> 
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
